@@ -19,11 +19,11 @@ namespace DataImport
             httpClient.DefaultRequestHeaders.Add("X-8451", "9b80df31-ffd4-440c-8f93-2828003dcbc2");
         }
 
-        public List<string> Endpoints {
-            get{
-                return JsonConvert.DeserializeObject<string>(Get());
-            }
-        }
+        public string Endpoints => Get();
+
+
+        public string HouseholdDemographicRecords => Get("/householdDemographicRecords");
+
 
         private string Get(string relativeUrl = ""){
             return httpClient.GetStringAsync(baseUrl + relativeUrl).Result;

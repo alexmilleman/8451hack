@@ -44,7 +44,6 @@
     <Reference Include="System.Net" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Net.Http.WebRequest" />
-    <Reference Include="System.Net.Http.Formatting" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Program.cs" />
@@ -60,6 +59,7 @@
       <DependentUpon>..\..\Main\Models\HackModel.edmx</DependentUpon>
     </Compile>
     <Compile Include="ApiReader.cs" />
+    <Compile Include="Models\Endpoint.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Models\HackModel.Context.tt">

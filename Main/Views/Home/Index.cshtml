@@ -1,1 +1,13 @@
-﻿<h2>Welcome to ASP.NET MVC @ViewData["Version"] on @ViewData["Runtime"]!</h2>
+﻿<div id="frame">
+
+</div>
+<script
+  src="https://code.jquery.com/jquery-1.12.4.js"
+  integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="
+  crossorigin="anonymous"></script>
+<script>
+    var frame = document.getElementById("frame");
+	$.get("/Home/HelloWorld", function(result){   
+        frame.innerHTML = result;
+	});
+</script>

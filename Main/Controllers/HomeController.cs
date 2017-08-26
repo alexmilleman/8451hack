@@ -19,5 +19,9 @@ namespace Main.Controllers
 
             return View();
         }
+
+        public ActionResult HelloWorld(){
+            return PartialView("_HelloWorld");
+        }
     }
 }

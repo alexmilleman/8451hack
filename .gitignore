@@ -1,6 +1,10 @@
 # Autosave files
 *~
 
+.ds_store
+
+.DS_STORE
+
 # build
 [Oo]bj/
 [Bb]in/

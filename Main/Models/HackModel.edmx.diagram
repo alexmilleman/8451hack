@@ -4,7 +4,9 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="487599eaf8c04882a7880033713e58cc" Name="Diagram1" />
+      <Diagram DiagramId="487599eaf8c04882a7880033713e58cc" Name="Diagram1" >
+        <EntityTypeShape EntityType="HackModel.Model" Width="1.5" PointX="4.625" PointY="1.375" />
+      </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
 </edmx:Edmx>

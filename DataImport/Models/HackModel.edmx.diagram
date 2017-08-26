@@ -6,6 +6,13 @@
     <edmx:Diagrams>
       <Diagram DiagramId="487599eaf8c04882a7880033713e58cc" Name="Diagram1" >
         <EntityTypeShape EntityType="HackModel.Model" Width="1.5" PointX="4.625" PointY="1.375" />
+        <EntityTypeShape EntityType="HackModel.TransactionRecord" Width="3.125" PointX="10.125" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="HackModel.Household" Width="2.125" PointX="14.5" PointY="7.25" />
+        <AssociationConnector Association="HackModel.HouseholdTransactionRecord" />
+        <EntityTypeShape EntityType="HackModel.Basket" Width="2.125" PointX="14.5" PointY="5.625" />
+        <AssociationConnector Association="HackModel.BasketTransactionRecord" />
+        <EntityTypeShape EntityType="HackModel.Product" Width="2.375" PointX="14.375" PointY="9.25" />
+        <AssociationConnector Association="HackModel.ProductTransactionRecord" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

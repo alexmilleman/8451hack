@@ -1,4 +1,9 @@
-﻿using DataImport.Models;
+﻿using Accord.Controls;
+using Accord.MachineLearning.VectorMachines.Learning;
+using Accord.Math.Optimization.Losses;
+using Accord.Statistics;
+using Accord.Statistics.Kernels;
+using DataImport.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,11 +16,7 @@ namespace KClustering
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("HelloWorld");
             var db = new TransactionEntities();
-            var data = db.TransactionRecords;
-            Console.WriteLine(data.Count());
-            Console.ReadLine();
         }
     }
 }

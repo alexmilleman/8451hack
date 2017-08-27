@@ -1,13 +1,7 @@
-﻿<div id="frame">
+﻿@using System.Collections.Generic
+@{
+    Dictionary<int, List<int>> data = ViewBag.data;
+}
+@foreach (var kvp in data){
 
-</div>
-<script
-  src="https://code.jquery.com/jquery-1.12.4.js"
-  integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="
-  crossorigin="anonymous"></script>
-<script>
-    var frame = document.getElementById("frame");
-	$.get("/Home/HelloWorld", function(result){   
-        frame.innerHTML = result;
-	});
-</script>
+}

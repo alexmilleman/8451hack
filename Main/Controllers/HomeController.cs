@@ -4,6 +4,8 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using System.Web.Mvc.Ajax;
+using Main.Models.Analysis;
+using Newtonsoft.Json;
 
 namespace Main.Controllers
 {
@@ -11,17 +13,13 @@ namespace Main.Controllers
     {
         public ActionResult Index()
         {
-            var mvcName = typeof(Controller).Assembly.GetName();
-            var isMono = Type.GetType("Mono.Runtime") != null;
-
-            ViewData["Version"] = mvcName.Version.Major + "." + mvcName.Version.Minor;
-            ViewData["Runtime"] = isMono ? "Mono" : ".NET";
-
+            var db = new AnalysisEntities();
+            Dictionary<int, List<int>> data = new Dictionary<int, List<int>>();
+            db.ProductRecomendations.ForEach(r=>{
+                data.Add((r.ProductId), JsonConvert.DeserializeObject<List<int>>(r.RecomendedProductIdsJson));
+            });
+            ViewBag.data = data;
             return View();
-        }
-
-        public ActionResult HelloWorld(){
-            return PartialView("_HelloWorld");
         }
     }
 }

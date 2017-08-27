@@ -16,7 +16,7 @@ namespace KClustering
     {
         static void Main(string[] args)
         {
-            
+            var db = new TransactionEntities();
         }
     }
 }

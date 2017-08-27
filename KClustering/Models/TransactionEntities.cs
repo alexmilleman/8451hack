@@ -14,6 +14,7 @@ namespace DataImport.Models
         
         public virtual DbSet<TransactionRecord> TransactionRecords { get; set; }
 
+
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
         }

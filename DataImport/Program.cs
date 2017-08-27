@@ -1,5 +1,5 @@
 ﻿using System;
-using Main.Models;
+using DataImport.Models;
 
 namespace DataImport
 {
@@ -7,7 +7,7 @@ namespace DataImport
     {
         public static void Main(string[] args)
 		{
-			var db = new Entities();
+			var db = new TransactionEntities();
             if (db != null) Console.WriteLine("Azure connection established!");
             var api = new ApiReader();
             if(api != null) {

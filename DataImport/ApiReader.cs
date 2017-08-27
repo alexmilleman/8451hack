@@ -31,6 +31,7 @@ namespace DataImport
 
 
         private string Get(string relativeUrl){
+            throw new NotImplementedException();
             int pageSize = 1000;
             int numberOfRecords = GetNumberOfRecords(relativeUrl);
             List<string> results = new List<string>();

@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{D53277C6-028B-4815-ACDF-39F0A7E7924A}</ProjectGuid>
+    <ProjectGuid>{E6F555D5-F09C-4552-BB4D-853B91D6BE52}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>KClustering</RootNamespace>
     <AssemblyName>KClustering</AssemblyName>
@@ -52,6 +52,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Models\PageInfo.cs" />
+    <Compile Include="Models\RootObject.cs" />
+    <Compile Include="Models\TransactionEntities.cs" />
+    <Compile Include="Models\TransactionRecord.cs" />
+    <Compile Include="Models\_embedded.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

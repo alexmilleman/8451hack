@@ -6,6 +6,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Main", "Main\Main.csproj", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataImport", "DataImport\DataImport.csproj", "{C3218ECD-8FAB-426C-A9E8-C5D7981E18A5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KClustering", "KClustering\KClustering.csproj", "{E6F555D5-F09C-4552-BB4D-853B91D6BE52}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -20,6 +22,10 @@ Global
 		{C3218ECD-8FAB-426C-A9E8-C5D7981E18A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C3218ECD-8FAB-426C-A9E8-C5D7981E18A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C3218ECD-8FAB-426C-A9E8-C5D7981E18A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6F555D5-F09C-4552-BB4D-853B91D6BE52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6F555D5-F09C-4552-BB4D-853B91D6BE52}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6F555D5-F09C-4552-BB4D-853B91D6BE52}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6F555D5-F09C-4552-BB4D-853B91D6BE52}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

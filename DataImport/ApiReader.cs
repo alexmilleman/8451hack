@@ -51,7 +51,7 @@ namespace DataImport
             int numberOfIterations = GetNumberOfRecords(endpoint) / pageSize;
             var size = GetNumberOfRecords(endpoint);
             List<int> pages = new List<int>();
-            for(var i = 38; i < numberOfIterations; i++)
+            for(var i = 92; i < numberOfIterations; i++)
             {
                 pages.Add(i);
             }

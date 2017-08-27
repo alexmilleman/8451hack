@@ -51,7 +51,7 @@
     <Compile Include="Models\HackModel.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>..\..\Main\Models\HackModel.Context.tt</DependentUpon>
+      <DependentUpon>HackModel.Context.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\HackModel.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -59,7 +59,8 @@
       <DependentUpon>..\..\Main\Models\HackModel.edmx</DependentUpon>
     </Compile>
     <Compile Include="ApiReader.cs" />
-    <Compile Include="Models\Endpoint.cs" />
+    <Compile Include="Models\RootObject.cs" />
+    <Compile Include="Models\PageInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Models\HackModel.Context.tt">

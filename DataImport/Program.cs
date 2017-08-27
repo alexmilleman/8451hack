@@ -14,13 +14,6 @@ namespace DataImport
                 Console.WriteLine("Fetching API endpoints");
                 Console.Write(api.Endpoints);
             };
-
-            Console.WriteLine("Select an endpoint...");
-            switch(Console.ReadLine()){
-                case "householdDemographicRecords":
-                    Console.Write(api.HouseholdDemographicRecords);
-                    break;
-            }
         }
     }
 }

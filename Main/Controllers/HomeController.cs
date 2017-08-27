@@ -23,5 +23,9 @@ namespace Main.Controllers
             ViewBag.data = data;
             return View();
         }
+
+        public ActionResult Concept() {
+            return View();
+        }
     }
 }

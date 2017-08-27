@@ -1,0 +1,33 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+</head>
+    <div>
+        <h1>
+            This program was created as a way to implement suggestive selling in store, based off of user purchasing data provided in the API.
+        </h1>
+
+        <p>
+            The API data was pulled into a SQL database and then manipulated in azure to identify trends.
+        </p>
+
+        <p>
+            To identify a trend, the data in the <u>"Product ID"</u> and <u>"Basket ID"</u> were cross referenced with the <u>"Household ID"</u> in order to find which households were purchasing similar items together, although they are not aware of it.
+        </p>
+
+        <p>
+            Once the trend was found we then identified the <u>3 most likely items</u> a customer would like to purchase based off what other customers, who purchased the same item, also purchased.
+        </p>
+
+        <p>
+            These 3 common items will then be displayed below the current item as a <u>"suggested sell"</u> to the customer, along with where to find the items in the store.
+        </p>      
+    </div>
+</html>

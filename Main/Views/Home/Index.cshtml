@@ -1,7 +1,25 @@
 ﻿@using System.Collections.Generic
 @{
-    Dictionary<int, List<int>> data = ViewBag.data;
+    Dictionary<int, string> data = ViewBag.data;
 }
-@foreach (var kvp in data){
 
-}
+<h1>Product Recommendations</h1>
+<h2>Data Set Name Here</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th>Product</th>
+            <th>Reccomendations</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var kvp in data)
+        {
+            <tr>
+                <td>@kvp.Key</td>
+                <td><ul><li>@kvp.Value</li></ul></td>
+            </tr>
+        }
+    </tbody>
+</table>

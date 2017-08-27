@@ -1,4 +1,4 @@
-namespace DataImport.Models
+namespace Main.Models
 {
     using System;
     using System.Data.Entity;
@@ -11,7 +11,8 @@ namespace DataImport.Models
             : base("name=TransactionEntities")
         {
         }
-        
+
+        public virtual DbSet<ProductRecommendation> ProductRecommendations { get; set; }
         public virtual DbSet<TransactionRecord> TransactionRecords { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)

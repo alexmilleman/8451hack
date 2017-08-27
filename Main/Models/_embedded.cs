@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using Main.Models;
+using System.Collections.Generic;
 
 namespace DataImport.Models
 {

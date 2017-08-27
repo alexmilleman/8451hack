@@ -11,9 +11,9 @@ namespace DataImport
             if (db != null) Console.WriteLine("Azure connection established!");
             var api = new ApiReader();
             if(api != null) {
-                Console.WriteLine("Fetching API endpoints");
-                Console.Write(api.Endpoints);
+                Console.WriteLine("API connection established!");
             };
+            api.BuildTransactionRecords();
         }
     }
 }

@@ -8,21 +8,19 @@ namespace DataImport.Models
 
     public partial class TransactionRecord
     {
-        public int TransactionRecordID { get; set; }
-
-        [Required]
-        public string TransTime { get; set; }
-
-        public int HouseholdID { get; set; }
-
-        public int BasketID { get; set; }
-
-        public int ProductID { get; set; }
-
-        public virtual Basket Basket { get; set; }
-
-        public virtual Household Household { get; set; }
-
-        public virtual Product Product { get; set; }
+        [Key]
+        public int Id { get; set; }
+        public string householdKey { get; set; }
+        public string basketId { get; set; }
+        public string day { get; set; }
+        public string productId { get; set; }
+        public string quantity { get; set; }
+        public string salesValue { get; set; }
+        public string storeId { get; set; }
+        public string couponMatchDisc { get; set; }
+        public string couponDisc { get; set; }
+        public string retailDisc { get; set; }
+        public string transTime { get; set; }
+        public string weekNo { get; set; }
     }
 }

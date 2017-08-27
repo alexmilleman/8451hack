@@ -49,16 +49,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Migrations\201708270042446_initial.cs" />
-    <Compile Include="Migrations\201708270042446_initial.Designer.cs">
-      <DependentUpon>201708270042446_initial.cs</DependentUpon>
+    <Compile Include="Migrations\201708270214109_initial.cs" />
+    <Compile Include="Migrations\201708270214109_initial.Designer.cs">
+      <DependentUpon>201708270214109_initial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201708270231562_all_strings.cs" />
+    <Compile Include="Migrations\201708270231562_all_strings.Designer.cs">
+      <DependentUpon>201708270231562_all_strings.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
-    <Compile Include="Models\Basket.cs" />
-    <Compile Include="Models\Household.cs" />
-    <Compile Include="Models\Product.cs" />
     <Compile Include="Models\TransactionEntities.cs" />
     <Compile Include="Models\TransactionRecord.cs" />
+    <Compile Include="Models\_embedded.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ApiReader.cs" />
@@ -70,8 +72,11 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201708270042446_initial.resx">
-      <DependentUpon>201708270042446_initial.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201708270214109_initial.resx">
+      <DependentUpon>201708270214109_initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708270231562_all_strings.resx">
+      <DependentUpon>201708270231562_all_strings.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
